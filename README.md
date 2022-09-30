@@ -21,11 +21,10 @@ Neste projeto, foram verificadas as seguintes habilidades:
   * `npm test nome-do-teste`
 
 ### Endpoints: 
-    - GET `/talker` que retorna toods os palestrantes da lista;
-    - GET `/talker/:id` para retornar um palestrante via id
-    - POST `/login` para criação de usuário
-    - PUT `/login` com tratação de erro e retorno de token
-    - POST `/talker` para adicionar um novo palestrante;
-    - PUT `/talker/:id`  para editar uma pessoa palestrante com base no id da rota
-    - DELETE `/talker/:id`  - deletar uma pessoa palestrante com base no id da rota
-    - GET `/talker/search?q=searchTerm` -O endpoint deve retornar um array de palestrantes que contenham em seu nome o termo pesquisado no queryParam da URL.
+    - GET `/talker` retorna toods os palestrantes da lista;
+    - POST `/talker` adicionar um novo palestrante;
+    - GET `/talker/:id` retorna um palestrante via id
+    - PUT `/talker/:id`  edita uma pessoa palestrante com base no id da rota
+    - DELETE `/talker/:id` deleta uma pessoa palestrante com base no id da rota
+    - GET `/talker/search?q=searchTerm` retorna um array de palestrantes que contenham em seu nome o termo pesquisado no queryParam da URL.
+    - POST `/login` criação de usuário

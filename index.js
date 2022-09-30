@@ -81,14 +81,6 @@ valRate, async (req, res) => {
   return res.status(200).json(newTalker);
 });
 
-app.delete('/talker/:id', valMidd, async (req, res) => {
-  const { id } = req.params;
-  const reading = await readingFile();
-  const talkerId = reading.filter((r) => r.id !== Number(id));
-  fs.writeFile(talkerFilePath, JSON.stringify(talkerId, null, 2));
-  return res.status(204).json();
-});
-
 app.get('/talker/:id', async (req, res) => {
   const reading = await fs.readFile(talkerFilePath, 'utf-8');
   const { id } = req.params;

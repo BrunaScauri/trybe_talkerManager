@@ -15,7 +15,7 @@ Neste projeto, foram verificadas as seguintes habilidades:
   * `npm install`
 3. Rode o server com o comando:
   * `npm run dev `
-4. Para verificar os endpoints, basta usar apps como Postman ou Insomnia e acessar:
+4. Para verificar os endpoints, basta usar apps como Postman ou Insomnia e fazer uma requisição:
   * `http://localhost:3000/rota-da-api`
 4. Para verificar os testes, rode o comando:
   * `npm test nome-do-teste`
